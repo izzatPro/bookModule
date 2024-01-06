@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import UILibraryProvider from '@/providers/UILibraryProvider'
+import { ClerkProvider } from '@clerk/nextjs'
+
 
 
 export const metadata: Metadata = {
@@ -14,6 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body >
         <UILibraryProvider>
@@ -21,5 +24,6 @@ export default function RootLayout({
         </UILibraryProvider>
       </body>
     </html>
+    </ClerkProvider>
   )
 }

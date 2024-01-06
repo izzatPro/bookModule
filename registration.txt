@@ -1,0 +1,5 @@
+1. Build Register , Login Screens
+2. Build Register , Login APIS
+3. API Integration
+4. Protected Routes in the APi and UI
+5. Middlewares
